@@ -1,5 +1,5 @@
 import Button from "./ui/button";
-
+import Line from '/src/assets/home/Line 2.png'
 export default function Features2() {
   return (
    <div>
@@ -23,7 +23,7 @@ export default function Features2() {
             <a href="#" className="text-blue-500 hover:text-blue-600">strategic execution</a>.
           </p>
           <div className="py-3">
-            <img src="/src/assets/home/Line 2.png" alt="Line Graphic" className="w-full" />
+            <img src={Line} alt="Line Graphic" className="w-full" />
           </div>
           <Button />
         </div>
@@ -57,7 +57,7 @@ export default function Features2() {
             Learn more about how DOML can help you do just that - all with a simple, easy-to-use platform.
           </p>
           <div className="py-3">
-            <img src="/src/assets/home/Line 2.png" alt="Line Graphic" className="w-full" />
+            <img src={Line} alt="Line Graphic" className="w-full" />
           </div>
           <Button />
         </div>

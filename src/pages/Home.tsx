@@ -26,7 +26,8 @@ import figma from '../assets/brands/Figma.png';
 import paypal from '../assets/brands/Paypal.png';
 import adobe from '../assets/brands/Adobe.png';
 import zoom from '../assets/brands/Zoom.png';
-
+//line 
+import Line from '/src/assets/home/Line 2.png'
 export default function Home() {
   const brands = [
     { name: 'airtel', src: airtel },
@@ -92,7 +93,7 @@ export default function Home() {
             </div>
   
             <div>
-              <img src="/src/assets/home/Line 2.png" alt="Line Graphic" className="w-full" />
+              <img src={Line} alt="Line Graphic" className="w-full" />
             </div>
   
             <Button /> {/* Assuming you have the Button component */}

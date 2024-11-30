@@ -1,4 +1,4 @@
-
+import img from '/src/assets/bnt/akar-icons_arrow-right.png'
 
 function Button() {
   return (
@@ -6,7 +6,7 @@ function Button() {
      <span className="text-black dark:text-white text-[19.41px] leading-[23.67px] font-[Montserrat]">
     Get Started
   </span>
-    <img src="/src/assets/bnt/akar-icons_arrow-right.png" alt="" className="w-4 h-4" />
+    <img src={img} alt="" className="w-4 h-4" />
   </button>
   )
 }
