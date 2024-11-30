@@ -17,11 +17,13 @@ export default function Features() {
           </span>
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-[18px] sm:text-[20px] font-[Montserrat] font-normal leading-[39.38px]">
-          DOML is a digital media agency powered by AI technology providing real-time,
-          <a href="#" className="text-blue-500 hover:text-blue-600">data-driven insights</a>
+          DOML is a digital media agency powered by AI technology providing real-time, 
+          <a href="#" className="text-blue-500 hover:text-blue-600 font-bold">
+        data-driven insights
+</a><br />
           on your business and audience. The mission of DOML is to create the best experiences for companies
           through intelligent insights, powerful analytics and
-          <a href="#" className="text-blue-500 hover:text-blue-600">strategic execution</a>.
+          <br /><a href="#" className="text-blue-500 hover:text-blue-600 font-bold">strategic execution</a>.
         </p>
         <div className="py-3">
           <img src={Line} alt="Line Graphic" className="w-full" />
@@ -54,8 +56,8 @@ export default function Features() {
           </span>
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-[18px] sm:text-[20px] font-[Montserrat] font-normal leading-[39.38px]">
-          It's all about getting your message in front of the right audience and creating those valuable
-          <a href="#" className="text-blue-500 hover:text-blue-600 font-bold">relationships</a>.
+          It's all about getting your message in front of the right audience and creating those valuable     
+             <a href="#" className="text-blue-500 hover:text-blue-600 font-bold">relationships</a><br />
           Learn More about how DOML can help you do just that - all with a simple, easy-to-use platform.
         </p>
         <div className="py-3">

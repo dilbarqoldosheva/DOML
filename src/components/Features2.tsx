@@ -17,10 +17,10 @@ export default function Features2() {
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-[20px] font-[Montserrat] font-normal leading-[39.38px] w-full lg:w-[542px]">
             DOML is a digital media agency powered by AI technology providing real-time,
-            <a href="#" className="text-blue-500 hover:text-blue-600">data-driven insights</a>
+            <a href="#" className="text-blue-500 hover:text-blue-600 font-bold">data-driven insights</a><br />
             on your business and audience. The mission of DOML is to create the best experiences for companies
             through intelligent insights, powerful analytics, and
-            <a href="#" className="text-blue-500 hover:text-blue-600">strategic execution</a>.
+            <a href="#" className="text-blue-500 hover:text-blue-600 font-bold">strategic execution</a>.
           </p>
           <div className="py-3">
             <img src={Line} alt="Line Graphic" className="w-full" />
