@@ -1,30 +1,35 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './components/custom/Navbar'
-import Home from './pages/Home'
-import { useState, useEffect } from 'react'
-import Footer from './components/custom/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/custom/Navbar';
+import Home from './pages/Home';
+import { useState, useEffect } from 'react';
+import Footer from './components/custom/Footer';
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(true)
+  // Check localStorage for the saved darkMode setting
+  const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+  const [darkMode, setDarkMode] = useState(savedDarkMode);
 
   useEffect(() => {
+    // Save the darkMode state to localStorage
+    localStorage.setItem('darkMode', darkMode.toString());
+
+    // Apply the dark class to the body element
     if (darkMode) {
-      document.documentElement.classList.add('dark')
+      document.body.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark')
+      document.body.classList.remove('dark');
     }
-  }, [darkMode])
+  }, [darkMode]);
 
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-black transition-colors duration-200">
-        <Navbar darkMode={darkMode}  setDarkMode={setDarkMode} />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route  path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
-  )
+  );
 }
-

@@ -9,7 +9,10 @@ export default {
     extend: {
       animation: {
         'spin-slow': 'spin-slow 20s linear infinite',
-      }
+      },
+      fontFamily: {
+        actor: ['"Actor"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
